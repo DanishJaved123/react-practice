@@ -1,0 +1,60 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+const flname = "Danish";
+const img1 = "https://picsum.photos/200/300";
+const img2 = "https://picsum.photos/200/300";
+const img3 = "https://picsum.photos/200/300";
+const heading = {
+      color: '#fa9191',
+      textAlign: 'center',
+      padding: '50px 0',
+      fontFamily: '"Recursive", sans-serif',
+};
+ReactDOM.render(
+  
+      <>
+      
+      {/* <h1 style={heading}>My Name is {flname} </h1>
+      <div className='img-div'>
+      <img src={img1} alt="randomImages" />
+      <img src={img2} alt="randomImages" />
+      <img src={img3} alt="randomImages" />
+      </div> */}
+      </> ,
+       document.getElementById("root"));
+
+
+       
+       import React from 'react';
+       import ReactDOM from 'react-dom';
+       import './index.css';
+       const flname = "Danish";
+       const img1 = "https://picsum.photos/200/300";
+       const img2 = "https://picsum.photos/200/300";
+       const img3 = "https://picsum.photos/200/300";
+       let curDate = new Date(2023, 10, 5, 14);
+       curDate = curDate.getHours();
+       const cssStyle ={};
+       let greeting ="";
+       if(curDate >= 1 && curDate <12){
+             greeting = "Good Morning";
+             cssStyle.color = "Green";
+       } 
+       else if (curDate >= 12 && curDate < 19){
+             greeting="Good Afternoon" ;  
+             cssStyle.color = "Blue";
+       }
+       else {
+             greeting="Good Night" ;  
+             cssStyle.color = "Gray"; 
+       }
+       ReactDOM.render(
+         
+             <>
+             <div className='img-div'>
+             <h1>Hello Sir, <span style={cssStyle}>{greeting}</span></h1>
+             </div>
+             </> ,
+              document.getElementById("root"));
+       
